@@ -137,7 +137,7 @@ resource "kubernetes_deployment" "example" {
 
       spec {
         container {
-          image = "qasymphony/qtest:latest"
+          image = "qasymphony/insights:v1.21.19.op"
           name  = "example"
 
           resources {
