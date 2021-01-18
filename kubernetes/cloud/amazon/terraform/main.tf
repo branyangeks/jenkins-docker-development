@@ -137,7 +137,7 @@ resource "kubernetes_deployment" "example" {
 
       spec {
         container {
-          image = "nginx:1.7.8"
+          image = "qasymphony/qtest:latest"
           name  = "example"
 
           resources {
@@ -166,7 +166,7 @@ resource "kubernetes_service" "example" {
     }
     port {
       port        = 80
-      target_port = 80
+      target_port = 8080
     }
 
     type = "LoadBalancer"
