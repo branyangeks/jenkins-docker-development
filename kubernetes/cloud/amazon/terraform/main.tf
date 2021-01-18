@@ -3,7 +3,7 @@ terraform {
 }
 
 provider "aws" {
-  version = ">= 2.28.1"
+  version = ">= 3.3.0"
   region  = var.region
 }
 
@@ -79,7 +79,7 @@ module "eks" {
   cluster_name    = var.cluster_name
   cluster_version = "1.17"
   subnets         = module.vpc.private_subnets
-  version = "12.2.0"
+  version = "13.2.1"
   cluster_create_timeout = "1h"
   cluster_endpoint_private_access = true 
 
