@@ -137,7 +137,7 @@ resource "kubernetes_deployment" "example" {
 
       spec {
         container {
-          image = "qasymphony/insights:v1.21.19.op"
+          image = "890882436612.dkr.ecr.us-east-2.amazonaws.com/test-conductor-java-8-pilot"
           name  = "example"
 
           resources {
